@@ -17,6 +17,8 @@ from crypto_utils import convert_decimal_to_float
 
 from config import *
 
+START_BLOCK_FOR_EVENT_FETCHING = 13646063
+
 '''Parse Borrowd event based on AAVE V1 protocol:
    https://docs.aave.com/developers/v/1.0/developing-on-aave/the-protocol/lendingpool#borrow-1
 '''
@@ -109,8 +111,7 @@ def handle_liqudation_call_event_V2(event_data, err_handler):
 '''
 def fetch_events(type):
     web3 = Web3(Web3.HTTPProvider(Infura_EndPoint))
-    #from_block = 13333357 #2021-10-01 12:11:05
-    from_block = 13646063
+    from_block = START_BLOCK_FOR_EVENT_FETCHING
     to_block = 'latest'
     address = None
     topics = None
