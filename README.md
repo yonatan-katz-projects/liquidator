@@ -1,3 +1,11 @@
+### What this repo contains:
+This repository includes code that interacts with the Ethereum network, 
+providing examples of fetching events from Aave DeFi smart contracts and
+aggregating the collected liquidation rewards. 
+For example python/main.py contains example how to fetch events from AAVE LiquidationCall smart contract
+starting from Nov-19-2021 (block 13646063).
+
+
 ## Liquidator bot for Aave crypto liquiduty protocol
 In the context of decentralized finance (DeFi) and lending platforms like Aave, "liquidation" <br>
 typically refers to the process of seizing and selling collateral to repay a loan when the borrower's position falls below a certain threshold,<br>
