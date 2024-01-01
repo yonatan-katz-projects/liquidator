@@ -3,7 +3,7 @@ This repository includes code that interacts with the Ethereum network,
 providing examples of fetching events from Aave DeFi smart contracts and
 aggregating the collected liquidation rewards. 
 
-# For example python/main.py
+For example python/main.py<br>
 contains example how to fetch events from AAVE LiquidationCall smart contract
 starting from Nov-19-2021 (block 13646063).<br>
 
